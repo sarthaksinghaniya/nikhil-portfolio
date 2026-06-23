@@ -426,12 +426,14 @@ header {
 }
 
 .home {
-  margin: 160px 200px;
+  margin: 160px 80px;
   color: #111;
 }
 
 .home-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 6rem;
 }
 
@@ -555,7 +557,7 @@ hr {
 }
 
 .home img {
-  width: 400px;
+  width: 550px;
   border-radius: 15px;
   box-shadow: 4px 4px 0px #111;
 }
@@ -1246,4 +1248,94 @@ h1, h2, h3, h4, h5, .top-tags span, .btn, .btn-home1, .btn-home2, .ul-list li a,
 
 .ul-list {
     box-shadow: 5px 4px 0px #111 !important;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 900px) {
+    .content, .home-container, .about-info2, .contact-content {
+        flex-direction: column !important;
+        gap: 2rem !important;
+        display: flex !important;
+    }
+    .home, .about, .project, .services, #contact {
+        margin: 80px 20px !important;
+        padding: 0 !important;
+    }
+    .info-home h1 {
+        font-size: 40px !important;
+    }
+    .info-home h3 {
+        font-size: 24px !important;
+    }
+    
+    /* Intro (Loading Page) Mobile Fixes */
+    #intro {
+        height: auto !important;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .card {
+        padding: 24px !important;
+        width: 100%;
+    }
+    .left h1 {
+        font-size: 32px !important;
+        br { display: none; }
+    }
+    .buttons {
+        flex-wrap: wrap;
+    }
+    .orbit-box {
+        margin: 20px auto;
+    }
+    .home img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .photo-container {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .photo-container img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .ul-list {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+    .left h1 {
+        font-size: 36px !important;
+    }
+    .orbit-box {
+        width: 180px !important;
+        height: 180px !important;
+    }
+    .core {
+        inset: 40px !important;
+    }
+    .projects-container, .services-grid {
+        grid-template-columns: 1fr !important;
+    }
+    header {
+        position: relative !important;
+    }
+    .home-p {
+        margin-top: 20px;
+    }
+    .top-tags {
+        flex-wrap: wrap;
+    }
+}
+
+/* Eliminate large vertical gaps to ensure GSAP seamless overlapping */
+section {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+.home {
+    margin-top: 140px !important; /* Keep top margin for home to clear fixed navbar */
 }
