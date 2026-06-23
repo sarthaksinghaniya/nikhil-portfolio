@@ -1195,3 +1195,45 @@ h1, h2, h3, h4, h5 {
     box-shadow: 2px 2px 0px #111 !important;
     font-weight: bold;
 }
+
+
+/* DEEP MANHWA SKETCH STYLES */
+body {
+    background-color: #fcfaf8 !important; /* warm sketchbook paper */
+    background-image: 
+        radial-gradient(#d0d0d0 1px, transparent 1px),
+        linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px) !important;
+    background-size: 20px 20px, 40px 40px, 40px 40px !important;
+    font-family: 'Patrick Hand', cursive !important;
+    font-size: 18px !important;
+}
+
+h1, h2, h3, h4, h5, .top-tags span, .btn, .btn-home1, .btn-home2, .ul-list li a, .service-features span {
+    font-family: 'Permanent Marker', cursive !important;
+    letter-spacing: 1px !important;
+}
+
+/* Wobbly Borders */
+.card, .project-card, .service-card, .contact-form, .photo-container, .ul-list, .btn, .btn-home1, .btn-home2, .site-link, .social-link, .service-icon, .form-group input, .form-group textarea, .tape, .core, .service-features span, .project-card .skills a, .top-tags span {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}
+
+/* Slightly uneven shadow */
+.card, .project-card, .service-card, .contact-form, .photo-container {
+    box-shadow: 7px 5px 0px #111 !important;
+}
+
+.project-card:hover, .service-card:hover {
+    box-shadow: 9px 7px 0px rgba(0,0,0,0.9) !important;
+    transform: translate(-3px, -2px) rotate(1deg) !important;
+}
+
+.btn:hover, .btn-home1:hover, .btn-home2:hover, .social-link:hover {
+    box-shadow: 5px 3px 0px #111 !important;
+    transform: translate(-2px, -2px) rotate(-2deg) !important;
+}
+
+.ul-list {
+    box-shadow: 5px 4px 0px #111 !important;
+}
