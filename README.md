@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This is a modern, responsive, and v
 
 ## 🌟 UI Preview
 
-![Portfolio UI Screenshot](images/cp.png)
+![Portfolio UI Screenshot](image.png)
 
 ## ✨ Features
 
